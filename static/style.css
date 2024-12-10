@@ -1,0 +1,159 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Fundo neutro e claro */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante preenchimento completo da tela */
+    color: #333; /* Texto principal em tom escuro para contraste */
+}
+
+.container {
+    background: #ffffff; /* Branco como cor principal */
+    padding: 24px;
+    border-radius: 16px; /* Bordas arredondadas suaves */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra moderna e leve */
+    width: 90%;
+    max-width: 800px;
+    margin: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Elevação sutil no hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Sombra mais evidente */
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #c62828; /* Vermelho destacado */
+    text-align: center;
+    font-weight: 700;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #c62828;
+    box-shadow: 0 0 8px rgba(198, 40, 40, 0.5);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #ff5722, #e64a19); /* Gradiente moderno */
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito de profundidade */
+}
+
+button:hover {
+    background: linear-gradient(45deg, #e64a19, #d84315); /* Gradiente mais escuro no hover */
+    transform: translateY(-3px); /* Elevação sutil no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+button:active {
+    transform: translateY(1px); /* Reduz a elevação no clique */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra reduzida no clique */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #fbe9e7; /* Vermelho claro */
+    color: #c62828; /* Vermelho escuro */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #ffebee; /* Fundo levemente avermelhado no hover */
+}
+
+.view-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #c62828;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.view-link:hover {
+    color: #b71c1c;
+    text-decoration: underline;
+}
+
+a {
+    color: #c62828;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b71c1c;
+}
+
+/* Melhorias de acessibilidade */
+input, button, textarea {
+    font-family: inherit;
+}

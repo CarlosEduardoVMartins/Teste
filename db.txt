@@ -1,0 +1,13 @@
+-- Cria o banco de dados
+CREATE DATABASE loja;
+
+-- Seleciona o banco de dados
+USE loja;
+
+-- Cria a tabela para armazenar produtos
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10, 2) NOT NULL,
+    descricao TEXT NOT NULL
+);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Itens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Itens</h1>
+        <form action="register_product.php" method="post">
+            <label for="product_name">Nome do Item:</label>
+            <input type="text" id="product_name" name="product_name" required>
+
+            <label for="product_price">Preço do Item:</label>
+            <input type="number" id="product_price" name="product_price" step="0.01" required>
+
+            <label for="product_description">Descrição do Item:</label>
+            <textarea id="product_description" name="product_description" rows="4" required></textarea>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <br>
+        <a href="view_products.php" class="view-link">Ver Itens Registrados</a>
+    </div>
+</body>
+</html>
